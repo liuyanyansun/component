@@ -1,66 +1,20 @@
 var data = [
-    {
-        name: 'Java',
-        num: 1,
-        trend: '降',
-        change: -0.0001
-    },
-    {
-        name: 'C',
-        num: 2,
-        trend: '升',
-        change: 0.0244
-    },
-    {
-        name: 'Python',
-        num: 3,
-        trend: '升',
-        change: 0.0141
-    },
-    {
-        name: 'C++',
-        num: 4,
-        trend: '降',
-        change: -0.0258
-    },
-    {
-        name: 'C#',
-        num: 5,
-        trend: '升',
-        change: 0.0207
-    },
-    {
-        name: 'Visual Basic .NET',
-        num: 6,
-        trend: '降',
-        change: -0.0117
-    },
-    {
-        name: 'JavaScript',
-        num: 7,
-        trend: '降',
-        change: -0.0085
-    }
+    {name: 'Java',num: 1,trend: '降',change: -0.0001},
+    {name: 'C',num: 2,trend: '升',change: 0.0244},
+    {name: 'Python',num: 3,trend: '升',change: 0.0141},
+    {name: 'C++',num: 4,trend: '降',change: -0.0258},
+    {name: 'C#',num: 5,trend: '升',change: 0.0207},
+    {name: 'Visual Basic .NET',num: 6,trend: '降',change: -0.0117},
+    {name: 'JavaScript',num: 7,trend: '降',change: -0.0085},
 ];
-var hotElement = document.getElementById('hot');
+var hotObj = document.getElementById('hot');
 var hotSettings = {
     data: data,
     columns: [
-        {
-            data: 'name',
-            type: 'text'
-        },
-        {
-            data: 'num',
-            type: 'numeric'
-        },
-        {
-            data: 'trend',
-            type: 'text'
-        },
-        {
-            data: 'change',
-            type: 'numeric',
+        {data: 'name',type: 'text'},
+        {data: 'num',type: 'numeric'},
+        {data: 'trend',type: 'text'},
+        {data: 'change',type: 'numeric',
             numericFormat: {
                 pattern: '+0.00%'
             }
@@ -89,7 +43,7 @@ var hotSettings = {
     filters: true,
     dropdownMenu: false
 };
-var one = new Handsontable(hotElement, hotSettings);
+var one = new Handsontable(hotObj, hotSettings);
 var myChart = echarts.init(document.getElementById('po'));
 var option = {
     title: {
