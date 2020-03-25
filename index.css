@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+#title{
+    width: 130px;
+    height: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+#hot {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#po {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+}
+#hot-display-license-info {
+    visibility: hidden;
+    display: none;
+}
